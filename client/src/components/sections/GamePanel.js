@@ -11,7 +11,7 @@ function GamePanel(props) {
         <p className="textarea game-panel-element text-center" variant="outline-dark" type="radio" name="gameType" defaultChecked value="0" disabled>
           Use the following url to access this game in the future:
         </p>
-      <p className="textarea game-panel-element text-center">http://localhost:3000/game/{props.gameurl}</p>
+      <p className="textarea game-panel-element text-center">https://infinite-earth-22785.herokuapp.com/game/{props.gameurl}</p>
     </form>
   );
 }
