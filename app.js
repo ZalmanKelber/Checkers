@@ -14,7 +14,7 @@ require("dotenv").config();
 
 const app = express();
 
-const uri = process.env.ATLAS_URI;
+const uri = "mongodb+srv://ZalmanKelber:CYDf67957Pa6cL5w@cluster0.9aoks.mongodb.net/checkersprod?retryWrites=true&w=majority";
 mongoose.connect(uri, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
 
 const connection = mongoose.connection;
