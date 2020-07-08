@@ -138,6 +138,14 @@ app.use("/server/complete", completeRouter);
 // app.use("/archive_authenticate", archive_authenticateRouter);
 // app.use("/archive_game", archive_gameRouter);
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  const path = require("path");
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
+
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
