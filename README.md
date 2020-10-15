@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-Live version deployed on heroku available [here](https://infinite-earth-22785.herokuapp.com/) (initial load may take a moment)
+Live version deployed on **heroku** available [here](https://infinite-earth-22785.herokuapp.com/) (initial load may take a moment)
 
 Also check out a quick video demo [here](https://www.youtube.com/watch?v=e4yvt64qAjE&feature=youtu.be)
 
@@ -10,7 +10,7 @@ Also check out a quick video demo [here](https://www.youtube.com/watch?v=e4yvt64
 
 This web application allows users to play the classic board game Checkers, either in real time against another user or else against the computer.  No log in is required for the latter.  
 
-This project is built in React and combines HTML drag-and-drop functionality and AJAX calls with complicated game logic in order to allow gameplay in four different rules variants, selected by the user.  The backend, built in **Node/Express**, connects to a **MongoDB** database using **Mongoose** and stored on Cloud Atlas servers and contains a simple algorithm to compute the best next move by examining all possible scenarios six turns forward.  Authentication is handled in accordance with best practices using **Passport JS** and **Express Session** and the user display is updated automatically through server sent events.  **React Bootstrap** is used for most of the frontend buttons, menus and forms.
+This project is built in **React** and combines HTML drag-and-drop functionality and AJAX calls with complicated game logic in order to allow gameplay in four different rules variants, selected by the user.  The backend, built in **Node/Express**, connects to a **MongoDB** database using **Mongoose** and stored on Cloud Atlas servers and contains a simple algorithm to compute the best next move by examining all possible scenarios six turns forward.  Authentication is handled in accordance with best practices using **Passport JS** and **Express Session** and the user display is updated automatically through server sent events.  **React Bootstrap** is used for most of the frontend buttons, menus and forms.
 
 ## User instructions
 
@@ -36,3 +36,5 @@ No log in is required to play against the computer.  To play against another use
 ## Note about art
 
 The design of this game was inspired both by the **Red and Black trees** known to students of Data Structures and Algorithms as well as the **Black Figure and Red Figure Vases** of Classical and Preclassical Ancient Greece.
+
+![Greek Vase](client/src/images/RedKing.png)
